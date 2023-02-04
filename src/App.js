@@ -6,9 +6,9 @@ function App() {
 
   const [usersList, setUsersList] = useState([])
 
-  const saveUserDataHandler = (uName, uAge) => {
+  const saveUserDataHandler = (uName, uAge, uCollage) => {
     setUsersList((prev) => {
-      return [...prev, { name: uName, age: uAge, id: Math.random().toString()}]
+      return [...prev, { name: uName, age: uAge, collage : uCollage, id: Math.random().toString()}]
     })
   }
   return (

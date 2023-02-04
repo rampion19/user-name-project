@@ -10,7 +10,7 @@ const UserList = (props) => {
                 {props.users.map((user) => (
                     <li key={user.id} className="users li">
                         {user.name} ({user.age} years old)
-                        {/* <Button type ='delete'>Delete user</Button> */}
+                        {user.collage}
                     </li>
                   
                 ))}
